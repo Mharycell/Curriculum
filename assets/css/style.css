@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Edu+TAS+Beginner:wght@400;700&family=Sawarabi+Mincho&display=swap');
+
+html {
+	font-size: 14px;
+	box-sizing: border-box;
+}
+
+/* --Reset-- */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Sawarabi Mincho', serif;
+	margin: 0;
+	background-color: var(--background-body);
+	color: var(--text);
+	height: auto;
+	padding: 90px 20 px 0;
+}
+
+h1,
+h2,
+i,
+p {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+:root {
+	--subtitles: rgb(224, 138, 129);
+	--background-body: rgb(226, 189, 195);
+	--text: rgb(197, 101, 90);
+}
+
+header {
+	margin-top: 7rem;
+	position: relative;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	outline: 1px solid red;
+}
+
+.header-nav {
+	width: 100%;
+	height: 4rem;
+	position: absolute;
+	z-index: 10;
+	top: 0;
+	left: 0;
+	background-color: rgb(156, 113, 113);
+	opacity: 30%;
+}
+
+
+/* CV */
+
+.me {
+	display: flex;
+	flex-direction: column;
+	/* align-items: center; */
+	text-align: start;
+	width: 100%;
+	height: auto;
+	padding: 60px;
+	outline: 1px solid red;
+}
+
+.name {
+	color: var(--subtitles);
+	font-size: 50px;
+}
+
+.name:hover {
+	transition: 1s;
+	color: #ffffff;
+	transform: rotate(1);
+}
+
+.profession {
+	color: var(--subtitles);
+	font-size: 40px;
+}
+
+.cv a{
+  color: var(--subtitles);
+  text-decoration: none;
+}
+
+.cv a:hover{
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.redes {
+	display: flex;
+	justify-content: center;
+	outline: 1px solid red;
+}
+
+.iconos-redes {
+	display: flex;
+	flex-direction: row;
+}
+
+.link {
+	font-size: 50px;
+  color: var(--subtitles);
+}
+
+.image {
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	outline: 1px solid red;
+}
+
+.photo {
+	width: 25rem;
+	height: 35rem;
+	border-radius: 15px;
+	box-shadow: 8px 8px 8px 2px rgb(32, 32, 32);
+}
+
+.about-me {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	text-align: justify;
+	padding: 20px;
+	align-items: center;
+	outline: 1px solid red;
+}
+
+.description {
+	font-size: 20px;
+	padding: 20px;
+}
+
+.habilidades1 {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	outline: 1px solid red;
+}
+
+.habilidades {
+	font-size: 25px;
+	padding: 30px;
+}
+
+.iconos {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	font-size: 80px;
+	gap: 30px;
+}
+
+.portafolio {
+	display: flex;
+	flex-direction: column;
+	padding: 30px;
+	gap: 30px;
+	outline: 1px solid red;
+}
+
+.portafolio-title {
+	font-size: 25px;
+}
+
+.portafolio-cards {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 20px;
+	list-style: none;
+	padding: 0;
+	justify-content: space-around;
+}
+
+.portafolio-cards li {
+	display: grid;
+	justify-content: center;
+}
+
+.tarjeta {
+  display: flex;
+  flex-direction: row;
+	margin: 0 auto;
+}
+
+.iconos-tarjeta{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 40px;
+  font-size: 30px;
+  color: var(--subtitles);
+}
+
+.tarjeta img {
+  max-width: 300px;
+  border-radius: 10px;
+  box-shadow: 8px 8px 2px rgb(53, 52, 52);
+}
+
+.port{
+  font-size: 20px;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.contacto {
+	display: flex;
+	flex-direction: column;
+	padding: 30px;
+	gap: 30px;
+}
+
+.contacto-title{
+  font-size: 25px;
+}
+
+.contacto-info{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 40px;
+  font-size: 25px;
+}
+
+.footer{
+  background-color: rgb(156, 113, 113);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 30%;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 996px) {
+	body {
+		background-color: rgb(219, 175, 157);
+	}
+	.portafolio-cards {
+		grid-template-columns: 1fr 1fr;
+		gap: 10px;
+		justify-content: center;
+	}
+
+  .tarjeta img {
+    max-width: 340px;
+}
+}
+
+@media screen and (max-width: 768px) {
+	body {
+		background-color: rosybrown;
+	}
+	.portafolio-cards {
+		grid-template-columns: 1fr 1fr;
+		gap: 10px;
+		justify-content: center;
+	}
+
+  .tarjeta img {
+    max-width: 240px;
+}
+}
+
+
+
+@media screen and (max-width: 560px) {
+	body {
+		background-color: rgb(209, 192, 192);
+	}
+	.portafolio-cards {
+		grid-template-columns: 1fr;
+		gap: 10px;
+	}
+
+  .tarjeta img {
+    max-width: 300px;
+}
+}
+
+
