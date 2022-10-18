@@ -1,6 +1,3 @@
-const botonMenu = document.querySelector('.btn')
-const menu = document.querySelector('.header-nav_ul')
+// const btnToggle = document.querySelector('.btn-toggle');
 
-botonMenu.addEventListener('click', () => {
-	menu.classList.toggle('mostrar-menu')
-})
+//     .addEventListener('click', animateBars)

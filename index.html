@@ -17,55 +17,43 @@
 			<header class="header">
 				<a name="Home"></a>
 				<nav class="header-nav">
-					<div>
+					<div class="btn-toggle">
 						<button class="btn">
 							<i class="fa-solid fa-bars"></i>
 						</button>
-						
-                  <!-- <ul class="header-nav_ul">
+					</div>
+												
+                <ul class="header-nav_ul">
                     <li class="nav-ul_li "><a href="./index.html#Home">Home</a></li>                                       
                     <li class="nav-ul_li"><a href="./index.html#Acercademí">About me</a></li>                    
                     <li class="nav-ul_li"><a href="./index.html#Mishabilidades">My skills</a></li>
                     <li class="nav-ul_li"><a href="./index.html#Miportafolio">My portfolio</a></li>
                     <li class="nav-ul_li"><a href="./index.html#Contacto">Contact me</a></li>
-                  </ul> -->
-					</div>
+					<li class="redes">
+						<a class="iconos-redes" href="https://www.linkedin.com/in/flor-maricel-l-b736bb150/" target="_blank">
+							<p class="link"><i class="fa-brands fa-linkedin"></i></p>
+						</a>
+					</li>
+					<li class="redes">
+						<a class="iconos-redes" href="https://github.com/Mharycell" target="_blank"> 
+							<p class="link"><i class="fa-brands fa-github"></i></p>
+						</a>
+					</li>
+                </ul>					
 				</nav>
 			</header>
 
-			<!-- CV -->
-			<div class="me">
-				<div>
-					<h1 class="name">Maricel López</h1>
-					<div>
-						<h2 class="profession">Frontend Developer</h2>
-						<p class="cv"><a href="./downloads/Maricel-Lopez-En.pdf" target="_blank">English CV</a></p>
-						<p class="cv"><a href="./downloads/Maricel-Lopez-es.pdf" target="_blank">Spanish CV</a></p>
-					</div>
-				</div>
+<!-- CV -->
+			<div class="me">				
+				<h1 class="name">Maricel López</h1>
+				<h2 class="profession">Frontend Developer</h2>		
 			</div>
-			<!-- REDES -->
-			<div class="redes">
-				<div class="iconos-redes">
-					<div>
-						<a href="https://www.linkedin.com/in/flor-maricel-l-b736bb150/" target="_blank">
-							<p class="link"><i class="fa-brands fa-linkedin"></i></p>
-						</a>
-					</div>
-
-					<div>
-						<a href="https://github.com/Mharycell" target="_blank"
-							><p class="link"><i class="fa-brands fa-github"></i></p
-						></a>
-					</div>
-				</div>
-			</div>
-
+			
 			<div class="image">
 				<img class="photo" src="./assets/images/Mary.jpg" alt="Maricel López" />
 			</div>
 
-			<!-- ACERCA DE MÍ -->
+<!-- ACERCA DE MÍ -->
 			<section class="about-me">
 				<a name="Acercademí"></a>
 				<h2>Acerca de mí</h2>
@@ -75,9 +63,14 @@
 					crear contenido y excelentes experiencias a los usuarios, me apasiona aprender cosas
 					nuevas todo el tiempo, tengo la capacidad de adaptarme a los cambios constantes.
 				</p>
+				<div class="my-cv">					
+					<p class="cv"><a href="./downloads/Maricel-Lopez-En.pdf" target="_blank">English CV</a> <i class="fa-regular fa-file"></i></p>
+					
+					<p class="cv"><a href="./downloads/Maricel-Lopez-es.pdf" target="_blank">Spanish CV</a><i class="fa-regular fa-file"></i></p>		
+				</div>
 			</section>
 
-			<!-- HABILIDADES -->
+<!-- HABILIDADES -->
 			<section class="habilidades1">
 				<a name="Mishabilidades"></a>
 				<h2 class="habilidades">Mis habilidades</h2>
@@ -89,7 +82,7 @@
 				</div>
 			</section>
 
-			<!-- MI PORTAFOLIO -->
+<!-- MI PORTAFOLIO -->
 
 			<section class="portafolio">
 				<a name="Miportafolio"></a>
@@ -193,16 +186,21 @@
 				</div>
 			</section>
 		</div>
+
+<!-- FOOTER -->
 		<footer class="footer">
 			<p>Derechos reservados</p>
 			<p>By: Maricel López</p>
-			<a href="https://github.com/Mharycell" target="_blank"
-				><p class="link"><i class="fa-brands fa-github"></i></p
-			></a>
-			<a href="https://www.linkedin.com/in/flor-maricel-l-b736bb150/" target="_blank"
-				><p class="link"><i class="fa-brands fa-linkedin"></i></p
-			></a>
+			<div class="icons-footer">
+				<a href="https://github.com/Mharycell" target="_blank"
+					><p class="link"><i class="fa-brands fa-github"></i></p
+				></a>
+				<a href="https://www.linkedin.com/in/flor-maricel-l-b736bb150/" target="_blank"
+					><p class="link"><i class="fa-brands fa-linkedin"></i></p
+				></a>
+			</div>
 		</footer>
+		
 		<script src="./assets/js/app.js"></script>
 	</body>
 </html>
